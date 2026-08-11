@@ -1,0 +1,895 @@
+:root {
+  --navy: #08255c;
+  --navy-dark: #041a43;
+  --navy-light: #123c7c;
+
+  --text: #14213d;
+  --muted: #586174;
+
+  --border: #d9e0eb;
+  --background: #ffffff;
+  --tag-bg: #eef3fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  background: #eef1f6;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.page-wrapper {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 290px 1fr;
+
+  background: white;
+
+  min-height: 100vh;
+
+  box-shadow:
+    0 0 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  background:
+    linear-gradient(
+      180deg,
+      var(--navy) 0%,
+      var(--navy-dark) 100%
+    );
+
+  color: white;
+
+  padding:
+    42px 28px;
+
+  min-height: 100%;
+}
+
+.profile-photo-wrapper {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 32px;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border:
+    5px solid rgba(255,255,255,0.18);
+}
+
+.sidebar-section {
+  border-top:
+    1px solid rgba(255,255,255,0.25);
+
+  padding-top: 22px;
+  margin-top: 24px;
+}
+
+.sidebar-section h3 {
+  margin:
+    0 0 14px;
+
+  font-size: 14px;
+
+  letter-spacing: 0.08em;
+}
+
+.sidebar-section p {
+  font-size: 14px;
+  color:
+    rgba(255,255,255,0.86);
+}
+
+.sidebar-link {
+  display: inline-block;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
+}
+
+.sidebar-list {
+  padding-left: 18px;
+
+  color:
+    rgba(255,255,255,0.9);
+}
+
+.sidebar-list li {
+  margin-bottom: 8px;
+}
+
+.skill-group {
+  margin-bottom: 20px;
+}
+
+.skill-group strong {
+  font-size: 13px;
+
+  text-transform: uppercase;
+}
+
+.skill-group p {
+  margin:
+    7px 0 0;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main-content {
+  padding:
+    44px 46px;
+}
+
+
+/* HERO */
+
+.hero {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  align-items: flex-start;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: 42px;
+
+  color: var(--navy);
+
+  line-height: 1.15;
+}
+
+.hero h1 span {
+  font-size: 34px;
+  margin-left: 10px;
+}
+
+.hero-subtitle {
+  margin:
+    12px 0 0;
+
+  color: var(--navy-light);
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.download-btn {
+  white-space: nowrap;
+
+  background: var(--navy);
+
+  color: white;
+
+  padding:
+    12px 18px;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition:
+    0.2s ease;
+}
+
+.download-btn:hover {
+  background:
+    var(--navy-light);
+}
+
+.intro {
+  margin-top: 22px;
+
+  max-width: 760px;
+
+  font-size: 16px;
+
+  color: var(--muted);
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+  border-top:
+    1px solid var(--border);
+
+  margin-top: 34px;
+
+  padding-top: 28px;
+}
+
+.section h2 {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 18px;
+
+  margin:
+    0 0 22px;
+
+  color: var(--navy);
+}
+
+.section-number {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  background: var(--navy);
+
+  color: white;
+
+  border-radius: 4px;
+
+  font-size: 12px;
+}
+
+
+/* EDUCATION */
+
+.timeline {
+  border-left:
+    2px solid #dce4f0;
+
+  padding-left: 26px;
+}
+
+.timeline-item {
+  position: relative;
+
+  margin-bottom: 28px;
+}
+
+.timeline-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: -33px;
+  top: 7px;
+
+  width: 11px;
+  height: 11px;
+
+  background: var(--navy);
+
+  border-radius: 50%;
+}
+
+.timeline-item h3 {
+  margin: 0;
+
+  font-size: 17px;
+}
+
+.institution {
+  color: var(--navy-light);
+
+  font-weight: 700;
+}
+
+
+/* EXPERIENCE */
+
+.experience-item {
+  margin-bottom: 28px;
+}
+
+.experience-item h3 {
+  margin-bottom: 2px;
+}
+
+.experience-meta {
+  color: var(--navy-light);
+
+  font-weight: 600;
+}
+
+.experience-item ul {
+  padding-left: 20px;
+}
+
+
+/* RESEARCH */
+
+.research-lab {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.tag-container {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin:
+    14px 0 20px;
+}
+
+.tag {
+  background:
+    var(--tag-bg);
+
+  color: var(--navy);
+
+  padding:
+    5px 10px;
+
+  border-radius: 5px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.research-item {
+  margin-bottom: 18px;
+}
+
+
+/* THESIS */
+
+.thesis-card,
+.publication-card {
+  padding:
+    18px 0;
+}
+
+.thesis-title {
+  font-size: 17px;
+
+  font-weight: 700;
+
+  max-width: 700px;
+}
+
+.status {
+  font-style: italic;
+
+  color: var(--navy-light);
+
+  font-weight: 700;
+}
+
+
+/* BUTTONS */
+
+.button-row {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+.download-btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+
+  padding:
+    9px 14px;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.primary-btn {
+  background: var(--navy);
+
+  color: white;
+}
+
+.secondary-btn {
+  border:
+    1px solid var(--navy);
+
+  color: var(--navy);
+
+  background: white;
+}
+
+
+/* PROJECT */
+
+.project-layout {
+  display: grid;
+
+  grid-template-columns:
+    300px 1fr;
+
+  gap: 30px;
+
+  align-items: start;
+}
+
+.project-images {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 8px;
+}
+
+.project-images img {
+  width: 100%;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 5px 16px
+    rgba(0,0,0,0.15);
+}
+
+.project-title-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.project-title-row h3 {
+  font-size: 22px;
+
+  margin: 0;
+}
+
+.featured-label {
+  background: var(--navy);
+
+  color: white;
+
+  padding:
+    4px 8px;
+
+  border-radius: 5px;
+
+  font-size: 11px;
+}
+
+.pipeline {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 18px;
+
+  color: var(--navy);
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* TWO COLUMN */
+
+.two-column-section {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 40px;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+  margin-top: 34px;
+
+  padding:
+    24px;
+
+  background:
+    #f5f8fc;
+
+  border-radius: 8px;
+}
+
+.contact-section h2 {
+  color: var(--navy);
+}
+
+
+/* FOOTER */
+
+footer {
+  margin-top: 30px;
+
+  padding-top: 20px;
+
+  border-top:
+    1px solid var(--border);
+
+  text-align: center;
+
+  color: var(--muted);
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .page-wrapper {
+    display: block;
+  }
+
+  .sidebar {
+    min-height: auto;
+  }
+
+  .main-content {
+    padding:
+      30px 22px;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .download-btn {
+    display: inline-block;
+
+    margin-top: 20px;
+  }
+
+  .project-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .project-images {
+    max-width: 400px;
+  }
+
+  .two-column-section {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero h1 span {
+    display: block;
+
+    margin:
+      4px 0 0;
+
+    font-size: 24px;
+  }
+
+  .project-images {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   PRINT / PDF
+========================================= */
+
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
+
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  .page-wrapper {
+    width: 100%;
+    max-width: none;
+    min-height: auto;
+
+    margin: 0;
+
+    display: grid;
+
+    grid-template-columns: 55mm 1fr;
+
+    box-shadow: none;
+  }
+
+  /* LEFT SIDEBAR */
+
+  .sidebar {
+    padding: 10mm 6mm;
+
+    background: #08255c !important;
+    color: #ffffff !important;
+
+    min-height: 100%;
+  }
+
+  .profile-photo {
+    width: 34mm;
+    height: 34mm;
+
+    border-width: 2px;
+  }
+
+  .sidebar-section {
+    margin-top: 5mm;
+    padding-top: 4mm;
+  }
+
+  .sidebar-section h3 {
+    font-size: 9pt;
+  }
+
+  .sidebar-section p,
+  .sidebar-list,
+  .skill-group p {
+    font-size: 8pt;
+    line-height: 1.35;
+  }
+
+  /* MAIN */
+
+  .main-content {
+    padding: 10mm 8mm;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 25pt;
+  }
+
+  .hero h1 span {
+    font-size: 18pt;
+  }
+
+  .hero-subtitle {
+    font-size: 11pt;
+  }
+
+  .intro {
+    font-size: 9.5pt;
+  }
+
+  /* REMOVE DOWNLOAD BUTTON */
+
+  .download-btn {
+    display: none !important;
+  }
+
+  /* SECTIONS */
+
+  .section {
+    margin-top: 6mm;
+    padding-top: 5mm;
+  }
+
+  .section h2 {
+    margin-bottom: 4mm;
+
+    font-size: 12pt;
+  }
+
+  .section h3 {
+    font-size: 10pt;
+  }
+
+  .section p,
+  .section li {
+    font-size: 8.8pt;
+  }
+
+  /* Prevent sections from being awkwardly split */
+
+  .timeline-item,
+  .experience-item,
+  .research-item,
+  .thesis-card,
+  .publication-card,
+  .project-content {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* PROJECT */
+
+  .project-layout {
+    display: block;
+  }
+
+  .project-images {
+    display: flex;
+
+    gap: 3mm;
+
+    margin-bottom: 5mm;
+  }
+
+  .project-images img {
+    width: 28%;
+    max-width: 28%;
+
+    border-radius: 3mm;
+
+    box-shadow: none;
+  }
+
+  .project-title-row h3 {
+    font-size: 12pt;
+  }
+
+  .tag-container {
+    gap: 2mm;
+  }
+
+  .tag {
+    padding: 1mm 2mm;
+
+    font-size: 7.5pt;
+  }
+
+  .pipeline {
+    font-size: 7.5pt;
+  }
+
+  /* DON'T PRINT WEBSITE BUTTONS */
+
+  .button-row {
+    display: none !important;
+  }
+
+  /* CERTIFICATIONS */
+
+  .two-column-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8mm;
+  }
+
+  /* CONTACT */
+
+  .contact-section {
+    background: #f5f8fc !important;
+
+    padding: 5mm;
+  }
+
+  /* FOOTER */
+
+  footer {
+    margin-top: 5mm;
+
+    font-size: 7pt;
+  }
+
+  /* LINKS */
+
+  a {
+    text-decoration: none;
+
+    color: inherit;
+  }
+
+  /* IMPORTANT:
+     avoid page splitting immediately after headings */
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+}
