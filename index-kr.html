@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>이희재 — 스포츠 데이터 사이언스</title>
+    <meta name="description" content="이희재 — 스포츠데이터 연구자" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+  <div class="page">
+    <!-- MASTHEAD -->
+    <header class="masthead">
+      <div class="masthead-left">
+        <img src="assets/profile.jpeg" alt="이희재" class="masthead-photo" />
+
+        <div class="masthead-text">
+          <h1>이희재</h1>
+
+          <p class="role">스포츠 데이터 사이언스</p>
+
+          <p class="tagline">
+            인감 움직임을 연구합니다. <br />
+            XAI와 LLMs를 활용한 클라이밍 코칭 피드백 앱을 만들었습니다.
+          </p>
+
+          <div class="contact-bar">
+              <a href="#contact" class="inline-link"><b>Contact</b></a>
+              <a href="mailto:lee_heejae@yonsei.ac.kr">lee_heejae@yonsei.ac.kr</a>
+              <a href="https://github.com/heejae0811" target="_blank" rel="noopener noreferrer">github.com/heejae0811</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="masthead-actions">
+        <button type="button" class="print-btn" onclick="window.print()">이력서 다운로드 (PDF)</button>
+        <span class="lang-switch"><a href="index.html">EN</a> · <span class="current">KR</span></span>
+      </div>
+    </header>
+
+    <!-- 1. 학력 -->
+    <section class="section" id="education">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>학력</h2>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2024.09 – 2026.08</div>
+
+        <div class="timeline-body">
+          <h3>연세대학교 일반대학원 체육학과 석사</h3>
+
+          <p>세부전공: 데이터 사이언스</p>
+          <p>디지털헬스케어 및 스포츠데이터사이언스 연구실</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2014.03 – 2019.02</div>
+
+        <div class="timeline-body">
+          <h3>연세대학교 미래캠퍼스 정보통신공학과 학사</h3>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 2. 연구 -->
+    <section class="section" id="research">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>연구</h2>
+      </div>
+
+      <p class="research-intro">
+        연세대학교 산악회에서의 클라이밍·등산 경험은 "무엇이 좋은 등반을 만드는가"에 대한 궁금증으로 이어졌고,
+        이는 클라이밍 퍼포먼스 분석 연구의 출발점이 되었습니다.
+      </p>
+
+      <div class="tag-container">
+        <span class="tag">Human Movement Analysis</span>
+        <span class="tag">Computer Vision</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Explainable AI</span>
+        <span class="tag">LLMs</span>
+      </div>
+
+      <div class="research-lead">
+        <h3>학위논문 연구</h3>
+
+        <p>
+          클라이밍 영상을 포즈 추정(Pose Estimation)으로 분석하고, 머신러닝으로 동작 패턴을 분류한 뒤,
+          XAI(설명가능 AI) 결과를 LLM에 제공해 사용자가 이해하기 쉬운 언어로 코칭 피드백을 생성하는 연구입니다.
+        </p>
+      </div>
+
+      <div class="research-collab">
+        <h3>공동 연구 — 진행 중</h3>
+
+        <div class="research-item">
+          <strong>바디프랜드</strong>
+
+          <p>마사지와 결합된 저강도 운동 습관화가 비만, 체중 감량에 대한 자신감, 근기능에 미치는 효과 연구 (IRB 승인)</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 3. 대표 프로젝트 -->
+    <section class="section" id="project">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>대표 프로젝트</h2>
+      </div>
+
+      <div class="project-card">
+        <div class="project-images">
+          <img src="assets/app01.jpg" alt="AI 클라이밍 코치 — 화면 1" />
+          <img src="assets/app02.jpg" alt="AI 클라이밍 코치 — 화면 2" />
+          <img src="assets/app03.jpg" alt="AI 클라이밍 코치 — 화면 3" />
+        </div>
+
+        <h3>AI 클라이밍 코칭 앱</h3>
+
+        <p>
+          학위논문 연구를 기반으로 개발한 AI 기반 모바일·웹 애플리케이션입니다.
+          업로드된 클라이밍 영상을 분석해 이해하기 쉬운 언어로 개인 맞춤형 코칭 피드백을 제공합니다.
+        </p>
+
+        <div class="pipeline">
+          <span class="step">영상 입력</span><span class="arrow">→</span>
+          <span class="step">포즈 추정</span><span class="arrow">→</span>
+          <span class="step">특징 추출</span><span class="arrow">→</span>
+          <span class="step">머신러닝</span><span class="arrow">→</span>
+          <span class="step">XAI</span><span class="arrow">→</span>
+          <span class="step">LLM 피드백 (제미나이)</span>
+        </div>
+
+        <div class="button-row">
+          <a href="https://ai-climbing-coach-seven.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">라이브 데모</a>
+          <a href="https://github.com/heejae0811/AIClimbingCoach" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub — 프론트엔드</a>
+          <a href="https://github.com/heejae0811/AIClimbingCoach_backend" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub — 백엔드</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 4. 논문 -->
+    <section class="section" id="publication">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2>논문</h2>
+      </div>
+
+      <div class="pub-card">
+        <span class="pub-kind">석사학위논문</span>
+
+        <p class="pub-title-kr">소셜미디어 영상을 활용한 일반 LLM과 XAI 통합 LLM의 클라이밍 코칭 피드백 비교: 파일럿 평가 연구</p>
+
+        <div class="button-row">
+          <a href="assets/thesis.pdf" target="_blank" class="btn btn-secondary">학위논문 PDF 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 5. 경력 -->
+    <section class="section" id="experience">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2>경력</h2>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2021 – 2024 <span class="timeline-sub">(2년 9개월)</span></div>
+
+        <div class="timeline-body">
+          <h3>프론트엔드 개발자 [스틱인터랙티브]</h3>
+
+          <p>JavaScript, TypeScript, React, HTML, CSS를 활용해 클라이언트 웹 서비스를 개발 및 유지보수.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2019 – 2021 <span class="timeline-sub">(1년 4개월)</span></div>
+
+        <div class="timeline-body">
+          <h3>프론트엔드 [모렌비]</h3>
+          <p>소규모 프로덕트 팀에서 쇼핑몰 웹 UI 및 프론트엔드 기능 개발.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 6. 자격증 -->
+    <section class="section" id="certification">
+      <div class="section-head">
+        <span class="section-num">06</span>
+        <h2>자격증</h2>
+      </div>
+
+      <ul class="cert-list">
+        <li>생활스포츠지도사 2급 (보디빌딩)</li>
+        <li>정보처리기사</li>
+        <li>OPIc</li>
+      </ul>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 7. 연락처 -->
+    <section class="section" id="contact">
+      <div class="section-head">
+        <span class="section-num">07</span>
+        <h2>연락처</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="item">
+          <span class="label">전화</span>
+          <span class="value">010-8993-1280</span>
+        </div>
+
+        <div class="item">
+          <span class="label">이메일</span>
+          <a href="mailto:lee_heejae@yonsei.ac.kr">lee_heejae@yonsei.ac.kr</a>
+        </div>
+
+        <div class="item">
+          <span class="label">GitHub</span>
+          <a href="https://github.com/heejae0811" target="_blank" rel="noopener noreferrer">github.com/heejae0811</a>
+        </div>
+
+        <div class="item">
+          <span class="label">티스토리 (개발 노트)</span>
+          <a href="https://jae-study.tistory.com/" target="_blank" rel="noopener noreferrer">jae-study.tistory.com</a>
+        </div>
+
+        <div class="item">
+          <span class="label">연구실</span>
+          <a href="https://yonsei-digitalhealthcare.blogspot.com/" target="_blank" rel="noopener noreferrer">디지털헬스케어 및 스포츠데이터사이언스 연구실</a>
+        </div>
+
+        <div class="item">
+          <span class="label">LinkedIn</span>
+          <span class="value pending">준비 중</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Heejae Lee</footer>
+  </div>
+  </body>
+</html>
