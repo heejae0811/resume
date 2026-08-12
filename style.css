@@ -8,6 +8,14 @@
   --navy-soft: #EEF1F6;
 
   --font: 'Noto Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Type scale �� unified font sizes only */
+  --fs-xs: 0.78rem;   /* labels, dates, buttons, tags */
+  --fs-sm: 0.85rem;   /* small meta text */
+  --fs-base: 0.94rem; /* body/description text */
+  --fs-md: 1rem;      /* subheadings (h3) */
+  --fs-lg: 1.2rem;    /* section headings (h2) */
+  --fs-xl: 2.1rem;    /* name (h1) */
 }
 
 * {
@@ -61,18 +69,18 @@ body {
 }
 
 .masthead h1 {
-  font-size: 2.1rem;
+  font-size: var(--fs-xl);
   margin: 0 0 4px;
 }
 
 .masthead .role {
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: var(--fs-base);
   color: var(--navy);
 }
 
 .masthead .tagline {
-  font-size: 0.95rem;
+  font-size: var(--fs-base);
 }
 
 .contact-bar {
@@ -80,7 +88,7 @@ body {
   flex-wrap: wrap;
   gap: 8px 18px;
   margin-top: 20px;
-  font-size: 0.85rem;
+  font-size: var(--fs-sm);
 }
 
 .contact-bar a, .contact-bar span {
@@ -100,7 +108,7 @@ body {
   color: var(--navy);
   font-family: var(--font);
   font-weight: 600;
-  font-size: 0.82rem;
+  font-size: var(--fs-xs);
   padding: 9px 16px;
   border-radius: 3px;
   cursor: pointer;
@@ -113,7 +121,7 @@ body {
 }
 
 .lang-switch {
-  font-size: 0.82rem;
+  font-size: var(--fs-xs);
 }
 
 .lang-switch a {
@@ -143,7 +151,7 @@ body {
 
 .section-num {
   font-weight: 700;
-  font-size: 0.78rem;
+  font-size: var(--fs-xs);
   color: #fff;
   background-color: #1B2A4A;
   border-radius: 3px;
@@ -151,7 +159,7 @@ body {
 }
 
 .section-head h2 {
-  font-size: 1.2rem;
+  font-size: var(--fs-lg);
   margin: 0;
 }
 
@@ -177,13 +185,13 @@ body {
 }
 
 .timeline-body h3 {
-  font-size: 1rem;
+  font-size: var(--fs-md);
   margin: 0 0 10px;
 }
 
 .timeline-body p {
   margin: 2px 0;
-  font-size: 0.92rem;
+  font-size: var(--fs-base);
 }
 
 .timeline-body a {
@@ -193,7 +201,7 @@ body {
 /* ---------- RESEARCH ---------- */
 
 .research-intro {
-  font-size: 0.96rem;
+  font-size: var(--fs-base);
   margin: 0 0 20px;
   padding: 14px 18px;
   background: var(--navy-soft);
@@ -207,7 +215,7 @@ body {
 
 .research-lead p {
   margin: 0 0 30px;
-  font-size: 0.95rem;
+  font-size: var(--fs-base);
 }
 
 .tag-container {
@@ -218,7 +226,7 @@ body {
 }
 
 .tag {
-  font-size: 0.76rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--navy);
   background: var(--navy-soft);
@@ -240,7 +248,7 @@ body {
   gap: 14px;
   padding: 12px 0;
   border-top: 1px solid var(--line);
-  font-size: 0.92rem;
+  font-size: var(--fs-base);
 }
 
 .research-item:first-child {
@@ -278,12 +286,12 @@ body {
 }
 
 .project-card h3 {
-  font-size: 1.1rem;
+  font-size: var(--fs-md);
   margin: 0 0 10px;
 }
 
 .project-card > p {
-  font-size: 0.95rem;
+  font-size: var(--fs-base);
   margin: 0 0 20px;
 }
 
@@ -292,7 +300,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  font-size: 0.78rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   background: var(--bg);
   border: 1px solid var(--line);
@@ -321,7 +329,7 @@ body {
 .btn {
   font-family: var(--font);
   font-weight: 600;
-  font-size: 0.82rem;
+  font-size: var(--fs-xs);
   text-decoration: none;
   padding: 9px 16px;
   border-radius: 4px;
@@ -360,7 +368,7 @@ body {
 }
 
 .pub-card h3 {
-  font-size: 1rem;
+  font-size: var(--fs-md);
   font-weight: 700;
   margin: 6px 0 10px;
 }
@@ -378,7 +386,7 @@ body {
   margin: 0;
 }
 .cert-list li {
-  font-size: 0.93rem;
+  font-size: var(--fs-base);
   padding: 15px 0;
   border-top: 1px solid var(--line);
 }
@@ -441,7 +449,7 @@ footer {
   margin-top: 56px;
   padding-top: 20px;
   border-top: 1px solid var(--line);
-  font-size: 0.8rem;
+  font-size: var(--fs-xs);
   text-align: center;
 }
 
