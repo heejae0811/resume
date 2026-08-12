@@ -39,7 +39,7 @@ body {
 .page {
   max-width: 860px;
   margin: 0 auto;
-  padding: 64px 32px 96px;
+  padding: 60px 30px;
 }
 
 /* ---------- HEADER ---------- */
@@ -49,9 +49,9 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   gap: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 50px;
   border-bottom: 2px solid var(--ink);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .masthead-photo {
@@ -167,7 +167,7 @@ body {
   height: 1px;
   background: var(--line);
   border: none;
-  margin: 50px 0;
+  margin: 60px 0;
 }
 
 /* ---------- TIMELINE (Education / Experience) ---------- */
@@ -182,6 +182,10 @@ body {
 
 .timeline-item:first-child {
   border-top: none;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
 }
 
 .timeline-body h3 {
@@ -234,10 +238,6 @@ body {
   padding: 4px 10px;
 }
 
-.research-collab {
-  margin-top: 8px;
-}
-
 .research-collab h3 {
   margin: 0 0 15px;
 }
@@ -246,7 +246,7 @@ body {
   display: grid;
   grid-template-columns: 130px 1fr;
   gap: 14px;
-  padding: 12px 0;
+  padding: 20px 0;
   border-top: 1px solid var(--line);
   font-size: var(--fs-base);
 }
@@ -254,6 +254,11 @@ body {
 .research-item:first-child {
   border-top: none;
 }
+
+.research-item:last-child {
+  padding-bottom: 0;
+}
+
 
 .research-item strong {
   font-weight: 700;
@@ -286,7 +291,6 @@ body {
 }
 
 .project-card h3 {
-  font-size: var(--fs-md);
   margin: 0 0 10px;
 }
 
@@ -362,20 +366,13 @@ body {
   margin-bottom: 14px;
 }
 
-.pub-card .pub-kind {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .pub-card h3 {
-  font-size: var(--fs-md);
-  font-weight: 700;
   margin: 6px 0 10px;
 }
 
 .pub-card .pub-title-kr {
   font-weight: 500;
-  margin: 10px 0 20px;
+  margin: 10px 0 30px;
 }
 
 /* ---------- CERTIFICATION ---------- */
@@ -391,6 +388,10 @@ body {
   border-top: 1px solid var(--line);
 }
 
+.cert-list li:last-child {
+  padding-bottom: 0;
+}
+
 /* ---------- CONTACT / FOOTER ---------- */
 
 .contact-grid {
@@ -401,12 +402,11 @@ body {
 
 .contact-grid .item {
   border-top: 1px solid var(--line);
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .contact-grid .label {
   font-weight: 700;
-  text-transform: uppercase;
   display: block;
   margin-bottom: 4px;
 }
@@ -446,8 +446,8 @@ body {
 }
 
 footer {
-  margin-top: 56px;
-  padding-top: 20px;
+  margin-top: 60px;
+  padding-top: 40px;
   border-top: 1px solid var(--line);
   font-size: var(--fs-xs);
   text-align: center;
@@ -456,13 +456,17 @@ footer {
 /* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 640px) {
-  .page { padding: 40px 20px 72px; }
+  .divider { margin: 30px 0; }
+  .page { padding: 40px 20px; }
+  footer { margin-top: 30px; padding-top: 30px; }
   .masthead { flex-direction: column; }
   .masthead h1 { font-size: 1.8rem; }
-  .timeline-item, .research-item { grid-template-columns: 1fr; }
+  .timeline-item, .research-item { grid-template-columns: 1fr; gap: 10px; }
   .project-images { grid-template-columns: repeat(3, 1fr); }
   .contact-grid { grid-template-columns: 1fr; }
   .cert-list { grid-template-columns: 1fr; }
+  .masthead-actions { flex-direction: initial; }
+  .pub-card .pub-title-kr { margin-bottom: 20px;}
 }
 
 @page {
